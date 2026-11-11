@@ -142,6 +142,8 @@ The daily workflow is a graph with an approval interrupt: `refresh forecast → 
 
 ## Try it online
 
+**Live demo: https://stockora-6ol.pages.dev** (sample data, not a real shop)
+
 The public demo runs on free hosting: the website on Cloudflare Pages and the server on Render. The free server sleeps after 15 idle minutes, so the first visit can take about a minute; the site shows a "Starting the demo server" screen meanwhile. The demo resets when the server restarts. How it is set up, step by step: [DEPLOY.md](DEPLOY.md).
 
 ## Run it on Windows
