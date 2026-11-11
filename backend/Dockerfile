@@ -10,7 +10,14 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     TZ=Asia/Kolkata \
     STOCKORA_DB=/app/data/stockora.db \
     STOCKORA_MODEL_DIR=/app/data/models \
-    STOCKORA_AUTO_RETRAIN=0
+    STOCKORA_AUTO_RETRAIN=0 \
+    OMP_NUM_THREADS=1 \
+    OPENBLAS_NUM_THREADS=1 \
+    MKL_NUM_THREADS=1 \
+    LOKY_MAX_CPU_COUNT=1
+
+# One thread each: cloud machines report many cores but give a small CPU share, and libraries that
+# start one thread per reported core then run hundreds of times slower. One thread is as fast here.
 
 WORKDIR /app
 COPY requirements-server.txt .
