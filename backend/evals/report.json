@@ -1,0 +1,140 @@
+{
+  "generated": "2026-11-07",
+  "forecast": {
+    "backtest": {
+      "model": {
+        "wape_daily": 0.4919,
+        "wape_weekly": 0.1831,
+        "rmsle_daily": 0.5988,
+        "bias": -0.0419,
+        "wape_event_days": 0.4636
+      },
+      "dow_mean_4w": {
+        "wape_daily": 0.5558,
+        "wape_weekly": 0.2138,
+        "rmsle_daily": 0.6667,
+        "bias": -0.107,
+        "wape_event_days": 0.5312
+      },
+      "moving_avg_28": {
+        "wape_daily": 0.4964,
+        "wape_weekly": 0.2138,
+        "rmsle_daily": 0.6012,
+        "bias": -0.107,
+        "wape_event_days": 0.4838
+      },
+      "seasonal_naive": {
+        "wape_daily": 0.6774,
+        "wape_weekly": 0.2668,
+        "rmsle_daily": 0.8872,
+        "bias": -0.1367,
+        "wape_event_days": 0.6309
+      },
+      "oracle_noise_floor": {
+        "wape_daily": 0.4893,
+        "wape_weekly": 0.1751,
+        "rmsle_daily": 0.5963,
+        "bias": -0.0014,
+        "wape_event_days": 0.4674
+      },
+      "gap_closed_vs_moving_avg": 0.793,
+      "data": "synthetic demand, 90 real SKUs, Jan 2025 - Nov 2026; scored on true demand"
+    },
+    "policy": {
+      "window": "2026-08-30 to 2026-11-07",
+      "days": 70,
+      "gut_feel": {
+        "stockout_day_rate": 0.0897,
+        "fill_rate": 0.9276,
+        "expired_value": 28885.22,
+        "avg_inventory_value": 130134.1376,
+        "revenue": 2126744.0,
+        "gross_profit": 184374.09
+      },
+      "stockora": {
+        "stockout_day_rate": 0.0298,
+        "fill_rate": 0.9763,
+        "expired_value": 25323.68,
+        "avg_inventory_value": 162317.9084,
+        "revenue": 2284056.0,
+        "gross_profit": 203840.67
+      },
+      "stockora_lean": {
+        "stockout_day_rate": 0.0794,
+        "fill_rate": 0.928,
+        "expired_value": 14595.92,
+        "avg_inventory_value": 115389.6404,
+        "revenue": 2163270.0,
+        "gross_profit": 202749.16
+      },
+      "note": "Synthetic demand (simulator.py). Same demand, start stock, lead times and shelf lives."
+    }
+  },
+  "matching": {
+    "n": 450,
+    "top1_accuracy": 1.0,
+    "auto_accept_rate": 0.9889,
+    "auto_accept_precision": 1.0,
+    "sent_to_review": 0.0111,
+    "sample_errors": [],
+    "data": "5 programmatic messy variants per real catalog name: bill caps/units, typo, Hinglish/word order, abbreviations, brand dropped + 2 typos. Caveat: 90 distinct SKUs; stores with many near-identical SKUs will be harder, which is why low-confidence matches go to review"
+  },
+  "bills": {
+    "n_bills": 240,
+    "error_detection_recall": 1.0,
+    "per_error_type": {
+      "gstin_typo": 1.0,
+      "line_amount": 1.0,
+      "grand_total": 1.0,
+      "cgst_sgst_mismatch": 1.0,
+      "igst_same_state": 1.0,
+      "invalid_slab": 1.0,
+      "rate_above_mrp": 1.0,
+      "already_expired": 1.0
+    },
+    "false_alarm_rate_clean_bills": 0.0,
+    "data": "synthetic GST bills from real catalog items; one injected error per corrupted bill"
+  },
+  "assistant": {
+    "routing_accuracy_dev": 1.0,
+    "routing_accuracy_heldout": 0.8929,
+    "n_dev": 17,
+    "n_heldout": 28,
+    "misses": [
+      {
+        "q": "Tell me which products will finish in the next few days",
+        "expected": "low_stock",
+        "got": "help",
+        "split": "heldout"
+      },
+      {
+        "q": "make me a purchase list for the distributor",
+        "expected": "order_plan",
+        "got": "documents",
+        "split": "heldout"
+      },
+      {
+        "q": "how many sales did I miss because items were out",
+        "expected": "lost_sales",
+        "got": "low_stock",
+        "split": "heldout"
+      }
+    ],
+    "injection_block_rate": 1.0,
+    "benign_false_refusal_rate": 0.0,
+    "p50_latency_ms_offline": 4.5,
+    "note": "Offline mode (rules + templates, no LLM). Held-out questions were written before running the router on them and are not used for tuning."
+  },
+  "grounding": {
+    "hallucinated_number_catch_rate": 0.8636,
+    "n_perturbed": 44,
+    "false_alarm_rate": 0.0,
+    "data": "assistant answers with one number inflated 7-40% (simulated LLM hallucination)"
+  },
+  "rag": {
+    "n": 12,
+    "hit_at_1": 1.0,
+    "hit_at_3": 1.0
+  },
+  "seconds": 244.6
+}

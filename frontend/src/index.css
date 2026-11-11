@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+/* Stockora design tokens.
+   Soft UI (neumorphism): every surface shares the base colour and is shaped only by light
+   (top-left) and shadow (bottom-right). Raised = something you can press or read as a card,
+   inset = a well that holds a value (inputs, tracks, gauges). Status colours carry meaning:
+   out = will run out, exp = will expire, ok = healthy, info = forecast. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --color-base: var(--base);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-2: var(--brand-2);
+  --color-brand-soft: var(--brand-soft);
+  --color-out: var(--out);
+  --color-out-soft: var(--out-soft);
+  --color-exp: var(--exp);
+  --color-exp-soft: var(--exp-soft);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Devanagari", system-ui, sans-serif;
+  --font-hindi: "Noto Sans Devanagari", "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+:root {
+  --base: #e8edf3;
+  --ink: #1b2635;
+  --ink-2: #536073;
+  --ink-3: #8994a4;
+  --line: #d3dae4;
+  --brand: #0e7f75;
+  --brand-2: #0a665e;
+  --brand-soft: #d3ebe7;
+  --out: #d6452e;
+  --out-soft: #f6dcd6;
+  --exp: #b7790a;
+  --exp-soft: #f3e6c8;
+  --ok: #17936d;
+  --ok-soft: #d4ece2;
+  --info: #4766e8;
+  --info-soft: #dde3fb;
+  --sh-dark: rgba(150, 165, 188, 0.55);
+  --sh-light: rgba(255, 255, 255, 0.95);
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --base: #1f252e;
+  --ink: #e4e9f0;
+  --ink-2: #a5afbd;
+  --ink-3: #727d8c;
+  --line: #2e3643;
+  --brand: #2cb3a5;
+  --brand-2: #22988c;
+  --brand-soft: #1f3a3a;
+  --out: #f06a52;
+  --out-soft: #3d2622;
+  --exp: #e2a53a;
+  --exp-soft: #3b3122;
+  --ok: #3cc497;
+  --ok-soft: #1f3a31;
+  --info: #7b93ff;
+  --info-soft: #262f4d;
+  --sh-dark: rgba(10, 13, 18, 0.65);
+  --sh-light: rgba(52, 61, 75, 0.55);
+  color-scheme: dark;
+}
+
+html {
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+body {
+  background: var(--base);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+/* ---- soft UI surfaces ---- */
+.neu {
+  background: var(--base);
+  box-shadow: 7px 7px 16px var(--sh-dark), -7px -7px 16px var(--sh-light);
+}
+.neu-sm {
+  background: var(--base);
+  box-shadow: 4px 4px 9px var(--sh-dark), -4px -4px 9px var(--sh-light);
+}
+.neu-in {
+  background: var(--base);
+  box-shadow: inset 4px 4px 8px var(--sh-dark), inset -4px -4px 8px var(--sh-light);
+}
+.neu-in-sm {
+  background: var(--base);
+  box-shadow: inset 2px 2px 5px var(--sh-dark), inset -2px -2px 5px var(--sh-light);
+}
+.neu-btn {
+  background: var(--base);
+  box-shadow: 4px 4px 9px var(--sh-dark), -4px -4px 9px var(--sh-light);
+  transition: box-shadow 140ms ease, transform 140ms ease, color 140ms ease;
+}
+.neu-btn:hover {
+  box-shadow: 5px 5px 12px var(--sh-dark), -5px -5px 12px var(--sh-light);
+}
+.neu-btn:active,
+.neu-btn[aria-pressed="true"],
+.neu-btn[aria-current="page"] {
+  box-shadow: inset 3px 3px 7px var(--sh-dark), inset -3px -3px 7px var(--sh-light);
+}
+.neu-primary {
+  background: linear-gradient(145deg, color-mix(in srgb, var(--brand) 88%, white), var(--brand-2));
+  color: #fff;
+  box-shadow: 5px 5px 12px var(--sh-dark), -4px -4px 10px var(--sh-light);
+  transition: box-shadow 140ms ease, filter 140ms ease;
+}
+.neu-primary:hover {
+  filter: brightness(1.05);
+}
+.neu-primary:active {
+  box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.25);
+}
+
+/* scrollbars that match the surface */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
+/* one orchestrated moment: runway fills and the health gauge sweep in on first load */
+@keyframes grow-x {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.grow-x {
+  transform-origin: left center;
+  animation: grow-x 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes sweep {
+  from { stroke-dashoffset: var(--sweep-from); }
+}
+.sweep {
+  animation: sweep 900ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+.rise {
+  animation: rise 220ms ease-out both;
+}
+@keyframes slide-in {
+  from { transform: translateX(24px); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+.slide-in {
+  animation: slide-in 220ms ease-out both;
+}
+@keyframes blink {
+  0%, 80%, 100% { opacity: 0.25; }
+  40% { opacity: 1; }
+}
+.dot-blink > span {
+  animation: blink 1.2s infinite both;
+}
+.dot-blink > span:nth-child(2) { animation-delay: 0.2s; }
+.dot-blink > span:nth-child(3) { animation-delay: 0.4s; }
+
+/* landing page: gentle float, card lift */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.float-slow { animation: float 7s ease-in-out infinite; }
+.float-slower { animation: float 9s ease-in-out 1s infinite; }
+.lift { transition: transform 200ms ease, box-shadow 200ms ease; }
+.lift:hover { transform: translateY(-3px); box-shadow: 10px 10px 22px var(--sh-dark), -8px -8px 20px var(--sh-light); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

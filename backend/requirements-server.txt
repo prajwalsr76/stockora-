@@ -1,0 +1,14 @@
+# Packages the web server needs (used by the Dockerfile for the online demo).
+# The full list for development, evaluation and tests is requirements.txt.
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.5
+xgboost-cpu>=2.1   # same "import xgboost", without the large GPU libraries
+pydantic>=2.7
+openpyxl>=3.1
+fpdf2>=2.8
+requests>=2.32
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+python-dotenv>=1.0

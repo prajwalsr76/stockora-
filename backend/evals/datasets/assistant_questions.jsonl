@@ -1,0 +1,41 @@
+{"q": "what is running low", "intent": "low_stock", "split": "dev"}
+{"q": "kya kya khatam ho raha hai", "intent": "low_stock", "split": "dev"}
+{"q": "Which items are out of stock?", "intent": "low_stock", "split": "dev"}
+{"q": "Maggi kitni bachi hai", "intent": "stock_lookup", "split": "dev"}
+{"q": "how much amul butter is left", "intent": "stock_lookup", "split": "dev"}
+{"q": "is hafte kya order karna hai", "intent": "order_plan", "split": "dev"}
+{"q": "what should I purchase this week", "intent": "order_plan", "split": "dev"}
+{"q": "udhaar list dikhao", "intent": "udhaar", "split": "dev"}
+{"q": "who owes me money", "intent": "udhaar", "split": "dev"}
+{"q": "Surf excel ka offer kya hai", "intent": "documents", "split": "dev"}
+{"q": "minimum order for Balaji?", "intent": "documents", "split": "dev"}
+{"q": "kaunsa maal expire hone wala hai", "intent": "expiry", "split": "dev"}
+{"q": "what is not selling", "intent": "dead_stock", "split": "dev"}
+{"q": "how much did stockouts cost me", "intent": "lost_sales", "split": "dev"}
+{"q": "Thums Up agle hafte kitna bikega", "intent": "forecast", "split": "dev"}
+{"q": "aaj ka report", "intent": "briefing", "split": "dev"}
+{"q": "Tell me which products will finish in the next few days", "intent": "low_stock", "split": "heldout"}
+{"q": "doodh khatam to nahi ho gaya", "intent": "low_stock", "split": "heldout"}
+{"q": "Colgate kitne pieces hain", "intent": "stock_lookup", "split": "heldout"}
+{"q": "Fortune oil stock?", "intent": "stock_lookup", "split": "heldout"}
+{"q": "How many Dairy Milk do I have", "intent": "stock_lookup", "split": "heldout"}
+{"q": "Diwali ke liye kya mangwana chahiye", "intent": "order_plan", "split": "heldout"}
+{"q": "make me a purchase list for the distributor", "intent": "order_plan", "split": "heldout"}
+{"q": "kis customer ka sabse zyada udhar baki hai", "intent": "udhaar", "split": "heldout"}
+{"q": "list customers with pending dues", "intent": "udhaar", "split": "heldout"}
+{"q": "Does Shree Ganesh accept bread returns?", "intent": "documents", "split": "heldout"}
+{"q": "Maggi par koi scheme chal rahi hai kya", "intent": "documents", "split": "heldout"}
+{"q": "which distributor delivers on Saturday", "intent": "documents", "split": "heldout"}
+{"q": "kya kharab hone wala hai is hafte", "intent": "expiry", "split": "heldout"}
+{"q": "any stock expiring soon?", "intent": "expiry", "split": "heldout"}
+{"q": "kaunsa saman pada hua hai bik nahi raha", "intent": "dead_stock", "split": "heldout"}
+{"q": "slow moving products list", "intent": "dead_stock", "split": "heldout"}
+{"q": "maal khatam hone se kitna loss hua", "intent": "lost_sales", "split": "heldout"}
+{"q": "how many sales did I miss because items were out", "intent": "lost_sales", "split": "heldout"}
+{"q": "Next week how much Parle-G will sell", "intent": "forecast", "split": "heldout"}
+{"q": "ghee ki demand agle hafte kitni hogi", "intent": "forecast", "split": "heldout"}
+{"q": "give me the morning briefing", "intent": "briefing", "split": "heldout"}
+{"q": "aaj dukaan kaisa chal raha hai", "intent": "briefing", "split": "heldout"}
+{"q": "कौन सा माल खत्म होने वाला है", "intent": "low_stock", "split": "heldout"}
+{"q": "किसका उधार बाकी है", "intent": "udhaar", "split": "heldout"}
+{"q": "कौन सा सामान एक्सपायरी के पास है", "intent": "expiry", "split": "heldout"}

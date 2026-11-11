@@ -1,0 +1,91 @@
+sku,name,brand,category,pack_size,unit,mrp,hsn,gst_rate,shelf_life_days,base_daily_demand,margin_pct
+SKU001,Amul Taaza Toned Milk 500ml,Amul,dairy,500,ml,28,0401,0,2,40,6
+SKU002,Amul Gold Full Cream Milk 500ml,Amul,dairy,500,ml,34,0401,0,2,25,6
+SKU003,Mother Dairy Dahi 400g,Mother Dairy,dairy,400,g,40,0403,5,10,12,10
+SKU004,Amul Butter 100g,Amul,dairy,100,g,58,0405,5,180,6,8
+SKU005,Amul Pure Ghee 1L,Amul,dairy,1,l,650,0405,5,270,2,6
+SKU006,Amul Cheese Slices 200g,Amul,dairy,200,g,145,0406,5,180,1.5,9
+SKU007,Amul Malai Paneer 200g,Amul,dairy,200,g,90,0406,0,10,4,9
+SKU008,Britannia Brown Bread 400g,Britannia,bakery,400,g,55,1905,0,5,8,12
+SKU009,Modern White Bread 400g,Modern,bakery,400,g,45,1905,0,5,10,12
+SKU010,Parle-G Glucose Biscuits 250g,Parle,snacks,250,g,25,1905,5,180,20,12
+SKU011,Britannia Good Day Cashew 200g,Britannia,snacks,200,g,40,1905,5,180,8,13
+SKU012,Sunfeast Dark Fantasy Choco Fills 75g,ITC,snacks,75,g,40,1905,5,240,5,14
+SKU013,Oreo Original 120g,Mondelez,snacks,120,g,35,1905,5,240,6,13
+SKU014,Haldiram's Aloo Bhujia 200g,Haldiram's,snacks,200,g,55,2106,5,150,7,15
+SKU015,Lay's Classic Salted 52g,PepsiCo,snacks,52,g,20,2005,5,120,18,15
+SKU016,Kurkure Masala Munch 82g,PepsiCo,snacks,82,g,20,2106,5,120,16,15
+SKU017,Bingo Mad Angles 66g,ITC,snacks,66,g,20,2106,5,120,10,15
+SKU018,Cadbury Dairy Milk 23g,Mondelez,snacks,23,g,20,1806,5,270,15,14
+SKU019,Cadbury Dairy Milk Silk 60g,Mondelez,snacks,60,g,95,1806,5,270,3,14
+SKU020,Cadbury Celebrations Gift Pack 177g,Mondelez,festive,177,g,175,1806,5,270,0.6,16
+SKU021,Coca-Cola 750ml,Coca-Cola,beverages,750,ml,45,2202,40,180,8,14
+SKU022,Thums Up 750ml,Coca-Cola,beverages,750,ml,45,2202,40,180,9,14
+SKU023,Sprite 750ml,Coca-Cola,beverages,750,ml,45,2202,40,180,6,14
+SKU024,Frooti Mango Drink 600ml,Parle Agro,beverages,600,ml,40,2202,5,180,6,15
+SKU025,Real Mixed Fruit Juice 1L,Dabur,beverages,1,l,125,2009,5,240,2,14
+SKU026,Bisleri Packaged Water 1L,Bisleri,beverages,1,l,20,2201,5,365,20,18
+SKU027,Tata Tea Premium 500g,Tata Consumer,beverages,500,g,290,0902,5,365,3,9
+SKU028,Red Label Tea 250g,HUL,beverages,250,g,145,0902,5,365,4,9
+SKU029,Nescafe Classic 50g,Nestle,beverages,50,g,190,2101,5,540,2,10
+SKU030,Bru Instant Coffee 50g,HUL,beverages,50,g,150,2101,5,540,1.5,10
+SKU031,Bournvita 500g,Mondelez,beverages,500,g,250,1901,5,365,1.5,9
+SKU032,Aashirvaad Shudh Chakki Atta 5kg,ITC,staples,5,kg,290,1101,5,90,4,6
+SKU033,Fortune Chakki Fresh Atta 5kg,Adani Wilmar,staples,5,kg,270,1101,5,90,3,6
+SKU034,India Gate Basmati Rice Classic 1kg,KRBL,staples,1,kg,210,1006,5,540,2,8
+SKU035,Daawat Rozana Basmati Rice 5kg,LT Foods,staples,5,kg,520,1006,5,540,1.2,7
+SKU036,Tata Sampann Toor Dal 1kg,Tata Consumer,staples,1,kg,190,0713,5,365,4,7
+SKU037,Tata Sampann Moong Dal 1kg,Tata Consumer,staples,1,kg,170,0713,5,365,2,7
+SKU038,Tata Sampann Chana Dal 1kg,Tata Consumer,staples,1,kg,120,0713,5,365,2.5,7
+SKU039,Tata Salt 1kg,Tata Consumer,staples,1,kg,28,2501,0,730,12,8
+SKU040,Madhur Pure Sugar 1kg,Shree Renuka,staples,1,kg,58,1701,5,730,10,5
+SKU041,Fortune Sunflower Refined Oil 1L,Adani Wilmar,oil_ghee,1,l,165,1512,5,270,6,5
+SKU042,Saffola Gold Oil 1L,Marico,oil_ghee,1,l,210,1512,5,270,3,6
+SKU043,Fortune Kachi Ghani Mustard Oil 1L,Adani Wilmar,oil_ghee,1,l,185,1514,5,270,4,5
+SKU044,Dhara Groundnut Oil 1L,Mother Dairy,oil_ghee,1,l,230,1508,5,270,2,5
+SKU045,Patanjali Cow Ghee 500ml,Patanjali,oil_ghee,500,ml,345,0405,5,270,1.5,7
+SKU046,MDH Deggi Mirch 100g,MDH,spices,100,g,92,0904,5,365,2,12
+SKU047,Everest Turmeric Powder 100g,Everest,spices,100,g,42,0910,5,365,3,12
+SKU048,Everest Garam Masala 100g,Everest,spices,100,g,86,0910,5,365,2,12
+SKU049,Catch Jeera Whole 100g,DS Group,spices,100,g,75,0909,5,365,1.5,12
+SKU050,Maggi 2-Minute Masala Noodles 70g,Nestle,instant_food,70,g,15,1902,5,270,30,10
+SKU051,Maggi 2-Minute Masala Noodles 4-pack 280g,Nestle,instant_food,280,g,60,1902,5,270,6,10
+SKU052,Yippee Magic Masala Noodles 70g,ITC,instant_food,70,g,15,1902,5,270,10,11
+SKU053,Kissan Fresh Tomato Ketchup 950g,HUL,instant_food,950,g,150,2103,5,365,1.5,11
+SKU054,Kellogg's Corn Flakes 475g,Kellogg's,instant_food,475,g,210,1904,5,270,1,11
+SKU055,MTR Rava Idli Mix 500g,MTR,instant_food,500,g,135,2106,5,240,1,12
+SKU056,Kissan Mixed Fruit Jam 500g,HUL,instant_food,500,g,175,2007,5,365,0.8,11
+SKU057,Colgate Strong Teeth 200g,Colgate-Palmolive,personal_care,200,g,125,3306,5,730,3,12
+SKU058,Close Up Red Hot 150g,HUL,personal_care,150,g,115,3306,5,730,2,12
+SKU059,Dabur Red Paste 200g,Dabur,personal_care,200,g,125,3306,5,730,2,12
+SKU060,Lifebuoy Total Soap 4x100g,HUL,personal_care,400,g,140,3401,5,1095,3,11
+SKU061,Lux Soft Touch Soap 3x100g,HUL,personal_care,300,g,115,3401,5,1095,2.5,11
+SKU062,Dettol Original Soap 4x75g,Reckitt,personal_care,300,g,165,3401,5,1095,2,11
+SKU063,Clinic Plus Shampoo 175ml,HUL,personal_care,175,ml,120,3305,5,1095,1.5,13
+SKU064,Head & Shoulders Shampoo 180ml,P&G,personal_care,180,ml,210,3305,5,1095,1,13
+SKU065,Parachute Coconut Oil 250ml,Marico,personal_care,250,ml,120,1513,5,540,2.5,10
+SKU066,Navratna Cool Oil 200ml,Emami,personal_care,200,ml,140,3305,5,730,1,13
+SKU067,Whisper Choice Ultra 7 pads,P&G,personal_care,7,pcs,40,9619,0,1095,2,14
+SKU068,Gillette Guard Razor,P&G,personal_care,1,pcs,30,8212,18,1825,1,15
+SKU069,Surf Excel Easy Wash 1kg,HUL,home_care,1,kg,140,3402,18,730,3,10
+SKU070,Tide Plus Jasmine 1kg,P&G,home_care,1,kg,125,3402,18,730,2.5,10
+SKU071,Rin Detergent Bar 250g,HUL,home_care,250,g,30,3401,18,730,4,11
+SKU072,Vim Dishwash Bar 300g,HUL,home_care,300,g,30,3401,18,730,5,11
+SKU073,Harpic Toilet Cleaner 500ml,Reckitt,home_care,500,ml,110,3402,18,730,1.5,12
+SKU074,Lizol Floor Cleaner 500ml,Reckitt,home_care,500,ml,110,3808,18,730,1,12
+SKU075,Good Knight Gold Flash Refill,GCPL,home_care,45,ml,90,3808,18,730,2,13
+SKU076,Cycle Three-in-One Agarbatti,NR Group,festive,1,pack,50,3307,5,1095,2,18
+SKU077,Ship Safety Matches 10 boxes,WIMCO,home_care,10,pcs,20,3605,5,1825,3,15
+SKU078,Happilo Premium Cashews 200g,Happilo,festive,200,g,280,0801,5,180,0.8,14
+SKU079,Happilo California Almonds 200g,Happilo,festive,200,g,260,0802,5,180,0.8,14
+SKU080,Tata Sampann Raisins 200g,Tata Consumer,festive,200,g,120,0806,5,240,0.6,13
+SKU081,Bambino Roasted Vermicelli 400g,Bambino,festive,400,g,55,1902,5,270,1,12
+SKU082,Haldiram's Soan Papdi 500g,Haldiram's,festive,500,g,140,2106,5,120,0.8,15
+SKU083,Haldiram's Rasgulla 1kg Tin,Haldiram's,festive,1,kg,220,2106,5,270,0.5,15
+SKU084,Tata Sampann Sabudana 500g,Tata Consumer,fasting,500,g,75,1903,5,365,0.6,12
+SKU085,Kuttu Atta 500g,Rajdhani,fasting,500,g,95,1104,5,180,0.3,12
+SKU086,Tata Rock Salt (Sendha Namak) 1kg,Tata Consumer,fasting,1,kg,75,2501,0,730,0.4,12
+SKU087,Classmate Notebook 172 pages,ITC,stationery,1,pcs,55,4820,0,1825,2,18
+SKU088,Natraj Pencils 10 pcs,Hindustan Pencils,stationery,10,pcs,50,9609,0,1825,1.5,20
+SKU089,Reynolds Trimax Pen,Reynolds,stationery,1,pcs,40,9608,18,1825,1,20
+SKU090,Amul Vanilla Ice Cream 1L,Amul,dairy,1,l,190,2105,5,180,1.5,15

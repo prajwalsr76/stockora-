@@ -1,0 +1,17 @@
+# Rebuilds the online demo every night so its sample sales and forecasts end on today's date.
+# Needs one repository secret, RENDER_DEPLOY_HOOK (Render > stockora-api > Settings > Deploy Hook).
+name: Refresh online demo
+on:
+  schedule:
+    - cron: "45 20 * * *"   # 02:15 India time
+  workflow_dispatch: {}
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ask Render to rebuild
+        env:
+          HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "RENDER_DEPLOY_HOOK is not set; nothing to do."; exit 0; fi
+          curl -fsS -X POST "$HOOK" > /dev/null && echo "Rebuild requested."

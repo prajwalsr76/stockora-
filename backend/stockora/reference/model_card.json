@@ -1,0 +1,33 @@
+{
+  "model": "75% XGBoost (Tweedie loss, one model across all products) + 25% weekday-adjusted exponential smoothing per product. Chosen by a model competition of 25 candidates on three real datasets (Nov 2026).",
+  "tests": [
+    {
+      "dataset": "Favorita supermarkets (Ecuador)",
+      "level": "store x product family",
+      "what": "54 stores, 1,782 series, 2 held-out test windows of 16 days (Jul-Aug 2017), never used to choose the model",
+      "accuracy_weekly_pct": 91.5,
+      "baseline_weekly_pct": 90.3,
+      "baseline": "TSB, the best classical method tested",
+      "error_cut_pct": 13
+    },
+    {
+      "dataset": "Walmart M5 (USA)",
+      "level": "individual items",
+      "what": "3 stores (one per state), 7,452 food and household items, M5's official 28-day test window, never used to choose the model",
+      "accuracy_weekly_pct": 61.0,
+      "baseline_weekly_pct": 59.9,
+      "baseline": "TSB, the best classical method tested",
+      "error_cut_pct": 3
+    },
+    {
+      "dataset": "Rohlik online grocer (Czechia, Hungary)",
+      "level": "item x warehouse",
+      "what": "3 warehouses, 2,554 fresh-food items (produce, bakery, meat), 2 held-out 14-day windows (May-Jun 2024), days the item sold out not scored",
+      "accuracy_weekly_pct": 84.5,
+      "baseline_weekly_pct": 81.4,
+      "baseline": "TSB, the best classical method tested",
+      "error_cut_pct": 17
+    }
+  ],
+  "note": "Accuracy = 1 - WAPE (share of units forecast wrongly), weekly totals. Single items sell 0-2 a day, so item-level accuracy is naturally lower. None of these datasets is Indian: Stockora is not yet validated on Indian shop data."
+}

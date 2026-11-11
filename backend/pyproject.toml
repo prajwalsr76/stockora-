@@ -1,0 +1,9 @@
+[project]
+name = "stockora"
+version = "0.1.0"
+description = "AI stock manager for Indian kirana stores: forecasting, cash-aware ordering, bill intake, Hinglish assistant, MCP"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

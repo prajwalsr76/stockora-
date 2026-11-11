@@ -1,0 +1,6 @@
+{"id": "f01", "lang": "en", "turns": ["How much Amul Butter is left?", "How much of it will sell next week?"], "expect_tool": "forecast", "expect_product": "Amul Butter 100g"}
+{"id": "f02", "lang": "en", "turns": ["What is running low?", "Is any of it also about to expire?"], "expect_tool": "expiry"}
+{"id": "f03", "lang": "en", "turns": ["Who owes me money?", "And what should I restock today?"], "expect_tool": "restock_plan"}
+{"id": "f04", "lang": "hi", "turns": ["अमूल मक्खन कितना बचा है?", "अगले हफ्ते यह कितना बिकेगा?"], "expect_tool": "forecast", "expect_product": "Amul Butter 100g"}
+{"id": "f05", "lang": "hi", "turns": ["क्या कम पड़ रहा है?", "क्या इनमें से कुछ एक्सपायर भी होने वाला है?"], "expect_tool": "expiry"}
+{"id": "f06", "lang": "hi", "turns": ["किसका उधार बाकी है?", "और आज क्या मंगाना चाहिए?"], "expect_tool": "restock_plan"}

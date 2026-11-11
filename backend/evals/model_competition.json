@@ -1,0 +1,1302 @@
+{
+  "runs": [],
+  "datasets": {
+    "favorita": {
+      "val": {
+        "gbm": {
+          "wape_daily": 0.1297,
+          "wape_weekly": 0.0837,
+          "rmsse": 0.619,
+          "bias": 0.0421
+        },
+        "gbm_plus": {
+          "wape_daily": 0.1302,
+          "wape_weekly": 0.0851,
+          "rmsse": 0.6192,
+          "bias": 0.0434
+        },
+        "gbm_plus_l2": {
+          "wape_daily": 0.1308,
+          "wape_weekly": 0.0847,
+          "rmsse": 0.6241,
+          "bias": 0.0419
+        },
+        "gbm_plus_big": {
+          "wape_daily": 0.1303,
+          "wape_weekly": 0.0864,
+          "rmsse": 0.6206,
+          "bias": 0.046
+        },
+        "gbm_bag": {
+          "wape_daily": 0.1296,
+          "wape_weekly": 0.0848,
+          "rmsse": 0.6169,
+          "bias": 0.0433
+        },
+        "lgb_poisson": {
+          "wape_daily": 0.1274,
+          "wape_weekly": 0.0807,
+          "rmsse": 0.6155,
+          "bias": 0.0376
+        },
+        "lgb_tweedie": {
+          "wape_daily": 0.1274,
+          "wape_weekly": 0.0815,
+          "rmsse": 0.6146,
+          "bias": 0.0384
+        },
+        "xgb_poisson": {
+          "wape_daily": 0.1291,
+          "wape_weekly": 0.0839,
+          "rmsse": 0.6204,
+          "bias": 0.0431
+        },
+        "xgb_tweedie": {
+          "wape_daily": 0.1307,
+          "wape_weekly": 0.0851,
+          "rmsse": 0.6214,
+          "bias": 0.0465
+        },
+        "ses_dow": {
+          "wape_daily": 0.1449,
+          "wape_weekly": 0.1028,
+          "rmsse": 0.6608,
+          "bias": -0.0321
+        },
+        "tsb_dow": {
+          "wape_daily": 0.1437,
+          "wape_weekly": 0.1019,
+          "rmsse": 0.6555,
+          "bias": -0.0122
+        },
+        "ma28": {
+          "wape_daily": 0.2437,
+          "wape_weekly": 0.115,
+          "rmsse": 0.8092,
+          "bias": 0.0142
+        },
+        "dow_mean_4w": {
+          "wape_daily": 0.1412,
+          "wape_weekly": 0.1014,
+          "rmsse": 0.6838,
+          "bias": 0.0246
+        },
+        "ens_gbm_ses": {
+          "wape_daily": 0.1217,
+          "wape_weekly": 0.0789,
+          "rmsse": 0.6122,
+          "bias": 0.0057
+        },
+        "ens_gbm_ses_75": {
+          "wape_daily": 0.1213,
+          "wape_weekly": 0.0769,
+          "rmsse": 0.6083,
+          "bias": 0.0245
+        },
+        "ens_bag_ses_75": {
+          "wape_daily": 0.1209,
+          "wape_weekly": 0.0768,
+          "rmsse": 0.6069,
+          "bias": 0.0245
+        },
+        "ens_bag_tsb_75": {
+          "wape_daily": 0.1228,
+          "wape_weekly": 0.0797,
+          "rmsse": 0.6083,
+          "bias": 0.0294
+        },
+        "ens_bag_ses": {
+          "wape_daily": 0.1215,
+          "wape_weekly": 0.0787,
+          "rmsse": 0.6115,
+          "bias": 0.0056
+        },
+        "ens_bag_ses_tsb": {
+          "wape_daily": 0.1224,
+          "wape_weekly": 0.0799,
+          "rmsse": 0.6112,
+          "bias": 0.0106
+        },
+        "ens_gbms": {
+          "wape_daily": 0.1294,
+          "wape_weekly": 0.0848,
+          "rmsse": 0.6178,
+          "bias": 0.0438
+        },
+        "ens_all": {
+          "wape_daily": 0.1217,
+          "wape_weekly": 0.0774,
+          "rmsse": 0.6075,
+          "bias": 0.0285
+        },
+        "ens_lgb_ses_75": {
+          "wape_daily": 0.1212,
+          "wape_weekly": 0.0762,
+          "rmsse": 0.6072,
+          "bias": 0.0207
+        },
+        "ens_xgb_ses_75": {
+          "wape_daily": 0.1209,
+          "wape_weekly": 0.0756,
+          "rmsse": 0.608,
+          "bias": 0.0269
+        },
+        "ens_bag_lgb_ses": {
+          "wape_daily": 0.1208,
+          "wape_weekly": 0.0763,
+          "rmsse": 0.6064,
+          "bias": 0.0226
+        },
+        "ens_boost3_ses": {
+          "wape_daily": 0.1201,
+          "wape_weekly": 0.0756,
+          "rmsse": 0.6051,
+          "bias": 0.024
+        }
+      },
+      "test": {
+        "gbm": {
+          "wape_daily": 0.1358,
+          "wape_weekly": 0.0873,
+          "rmsse": 0.7053,
+          "bias": 0.007
+        },
+        "gbm_plus": {
+          "wape_daily": 0.137,
+          "wape_weekly": 0.0881,
+          "rmsse": 0.7054,
+          "bias": 0.0006
+        },
+        "gbm_plus_l2": {
+          "wape_daily": 0.1392,
+          "wape_weekly": 0.0888,
+          "rmsse": 0.7125,
+          "bias": 0.003
+        },
+        "gbm_plus_big": {
+          "wape_daily": 0.1368,
+          "wape_weekly": 0.0898,
+          "rmsse": 0.7069,
+          "bias": 0.0112
+        },
+        "gbm_bag": {
+          "wape_daily": 0.1361,
+          "wape_weekly": 0.0875,
+          "rmsse": 0.7031,
+          "bias": 0.0032
+        },
+        "lgb_poisson": {
+          "wape_daily": 0.1377,
+          "wape_weekly": 0.0887,
+          "rmsse": 0.7049,
+          "bias": 0.0065
+        },
+        "lgb_tweedie": {
+          "wape_daily": 0.1377,
+          "wape_weekly": 0.0896,
+          "rmsse": 0.704,
+          "bias": 0.0052
+        },
+        "xgb_poisson": {
+          "wape_daily": 0.1373,
+          "wape_weekly": 0.0875,
+          "rmsse": 0.7067,
+          "bias": 0.0046
+        },
+        "xgb_tweedie": {
+          "wape_daily": 0.1357,
+          "wape_weekly": 0.0858,
+          "rmsse": 0.7043,
+          "bias": 0.0024
+        },
+        "ses_dow": {
+          "wape_daily": 0.1489,
+          "wape_weekly": 0.1015,
+          "rmsse": 0.7206,
+          "bias": -0.0048
+        },
+        "tsb_dow": {
+          "wape_daily": 0.1452,
+          "wape_weekly": 0.0973,
+          "rmsse": 0.7193,
+          "bias": -0.004
+        },
+        "ma28": {
+          "wape_daily": 0.2147,
+          "wape_weekly": 0.1113,
+          "rmsse": 0.827,
+          "bias": 0.0025
+        },
+        "dow_mean_4w": {
+          "wape_daily": 0.1528,
+          "wape_weekly": 0.1019,
+          "rmsse": 0.7614,
+          "bias": 0.0079
+        },
+        "ens_gbm_ses": {
+          "wape_daily": 0.1362,
+          "wape_weekly": 0.0881,
+          "rmsse": 0.6954,
+          "bias": -0.0021
+        },
+        "ens_gbm_ses_75": {
+          "wape_daily": 0.1347,
+          "wape_weekly": 0.0862,
+          "rmsse": 0.696,
+          "bias": -0.0007
+        },
+        "ens_bag_ses_75": {
+          "wape_daily": 0.1342,
+          "wape_weekly": 0.0858,
+          "rmsse": 0.6943,
+          "bias": 0.0012
+        },
+        "ens_bag_tsb_75": {
+          "wape_daily": 0.1337,
+          "wape_weekly": 0.086,
+          "rmsse": 0.6947,
+          "bias": 0.0014
+        },
+        "ens_bag_ses": {
+          "wape_daily": 0.1359,
+          "wape_weekly": 0.0879,
+          "rmsse": 0.6944,
+          "bias": -0.0008
+        },
+        "ens_bag_ses_tsb": {
+          "wape_daily": 0.1349,
+          "wape_weekly": 0.0871,
+          "rmsse": 0.6937,
+          "bias": -0.0006
+        },
+        "ens_gbms": {
+          "wape_daily": 0.1365,
+          "wape_weekly": 0.0882,
+          "rmsse": 0.7017,
+          "bias": 0.0049
+        },
+        "ens_all": {
+          "wape_daily": 0.1342,
+          "wape_weekly": 0.0859,
+          "rmsse": 0.6935,
+          "bias": 0.0032
+        },
+        "ens_lgb_ses_75": {
+          "wape_daily": 0.1353,
+          "wape_weekly": 0.0877,
+          "rmsse": 0.6945,
+          "bias": 0.0027
+        },
+        "ens_xgb_ses_75": {
+          "wape_daily": 0.1333,
+          "wape_weekly": 0.0845,
+          "rmsse": 0.6949,
+          "bias": 0.0006
+        },
+        "ens_bag_lgb_ses": {
+          "wape_daily": 0.1345,
+          "wape_weekly": 0.0866,
+          "rmsse": 0.6937,
+          "bias": 0.0019
+        },
+        "ens_boost3_ses": {
+          "wape_daily": 0.1335,
+          "wape_weekly": 0.0856,
+          "rmsse": 0.6924,
+          "bias": 0.0015
+        }
+      }
+    },
+    "m5": {
+      "val": {
+        "gbm": {
+          "wape_daily": 0.7101,
+          "wape_weekly": 0.3606,
+          "rmsse": 0.7575,
+          "bias": -0.0375
+        },
+        "gbm_plus": {
+          "wape_daily": 0.7075,
+          "wape_weekly": 0.3576,
+          "rmsse": 0.7557,
+          "bias": -0.0465
+        },
+        "gbm_plus_l2": {
+          "wape_daily": 0.7104,
+          "wape_weekly": 0.358,
+          "rmsse": 0.7559,
+          "bias": -0.0189
+        },
+        "gbm_plus_big": {
+          "wape_daily": 0.7075,
+          "wape_weekly": 0.3577,
+          "rmsse": 0.7565,
+          "bias": -0.0476
+        },
+        "gbm_bag": {
+          "wape_daily": 0.7066,
+          "wape_weekly": 0.3566,
+          "rmsse": 0.7544,
+          "bias": -0.0409
+        },
+        "lgb_poisson": {
+          "wape_daily": 0.7078,
+          "wape_weekly": 0.3564,
+          "rmsse": 0.7541,
+          "bias": -0.0264
+        },
+        "lgb_tweedie": {
+          "wape_daily": 0.7049,
+          "wape_weekly": 0.3557,
+          "rmsse": 0.7543,
+          "bias": -0.0402
+        },
+        "xgb_poisson": {
+          "wape_daily": 0.7055,
+          "wape_weekly": 0.356,
+          "rmsse": 0.7544,
+          "bias": -0.0452
+        },
+        "xgb_tweedie": {
+          "wape_daily": 0.7026,
+          "wape_weekly": 0.3573,
+          "rmsse": 0.7552,
+          "bias": -0.0641
+        },
+        "ses_dow": {
+          "wape_daily": 0.7077,
+          "wape_weekly": 0.3652,
+          "rmsse": 0.7693,
+          "bias": -0.0655
+        },
+        "tsb_dow": {
+          "wape_daily": 0.7111,
+          "wape_weekly": 0.3657,
+          "rmsse": 0.7816,
+          "bias": -0.0536
+        },
+        "ma28": {
+          "wape_daily": 0.7295,
+          "wape_weekly": 0.3773,
+          "rmsse": 0.7705,
+          "bias": -0.0487
+        },
+        "dow_mean_4w": {
+          "wape_daily": 0.7496,
+          "wape_weekly": 0.3773,
+          "rmsse": 0.8273,
+          "bias": -0.0487
+        },
+        "ens_gbm_ses": {
+          "wape_daily": 0.6998,
+          "wape_weekly": 0.3537,
+          "rmsse": 0.7545,
+          "bias": -0.056
+        },
+        "ens_gbm_ses_75": {
+          "wape_daily": 0.7016,
+          "wape_weekly": 0.3537,
+          "rmsse": 0.753,
+          "bias": -0.0513
+        },
+        "ens_bag_ses_75": {
+          "wape_daily": 0.7013,
+          "wape_weekly": 0.3532,
+          "rmsse": 0.7524,
+          "bias": -0.047
+        },
+        "ens_bag_tsb_75": {
+          "wape_daily": 0.7028,
+          "wape_weekly": 0.3542,
+          "rmsse": 0.7542,
+          "bias": -0.0441
+        },
+        "ens_bag_ses": {
+          "wape_daily": 0.6998,
+          "wape_weekly": 0.3535,
+          "rmsse": 0.7542,
+          "bias": -0.0532
+        },
+        "ens_bag_ses_tsb": {
+          "wape_daily": 0.7006,
+          "wape_weekly": 0.3532,
+          "rmsse": 0.7556,
+          "bias": -0.0502
+        },
+        "ens_gbms": {
+          "wape_daily": 0.707,
+          "wape_weekly": 0.3562,
+          "rmsse": 0.7545,
+          "bias": -0.0377
+        },
+        "ens_all": {
+          "wape_daily": 0.7021,
+          "wape_weekly": 0.353,
+          "rmsse": 0.7523,
+          "bias": -0.0428
+        },
+        "ens_lgb_ses_75": {
+          "wape_daily": 0.7,
+          "wape_weekly": 0.3525,
+          "rmsse": 0.7524,
+          "bias": -0.0465
+        },
+        "ens_xgb_ses_75": {
+          "wape_daily": 0.6979,
+          "wape_weekly": 0.3533,
+          "rmsse": 0.7529,
+          "bias": -0.0645
+        },
+        "ens_bag_lgb_ses": {
+          "wape_daily": 0.7004,
+          "wape_weekly": 0.3526,
+          "rmsse": 0.7521,
+          "bias": -0.0468
+        },
+        "ens_boost3_ses": {
+          "wape_daily": 0.6991,
+          "wape_weekly": 0.3522,
+          "rmsse": 0.7519,
+          "bias": -0.0527
+        }
+      },
+      "test": {
+        "gbm": {
+          "wape_daily": 0.7505,
+          "wape_weekly": 0.3937,
+          "rmsse": 0.7769,
+          "bias": 0.0167
+        },
+        "gbm_plus": {
+          "wape_daily": 0.7492,
+          "wape_weekly": 0.3929,
+          "rmsse": 0.7775,
+          "bias": 0.0056
+        },
+        "gbm_plus_l2": {
+          "wape_daily": 0.7488,
+          "wape_weekly": 0.3937,
+          "rmsse": 0.7756,
+          "bias": 0.0157
+        },
+        "gbm_plus_big": {
+          "wape_daily": 0.7473,
+          "wape_weekly": 0.3919,
+          "rmsse": 0.7772,
+          "bias": 0.0013
+        },
+        "gbm_bag": {
+          "wape_daily": 0.7477,
+          "wape_weekly": 0.392,
+          "rmsse": 0.776,
+          "bias": 0.0064
+        },
+        "lgb_poisson": {
+          "wape_daily": 0.749,
+          "wape_weekly": 0.3931,
+          "rmsse": 0.7758,
+          "bias": 0.0149
+        },
+        "lgb_tweedie": {
+          "wape_daily": 0.7473,
+          "wape_weekly": 0.3933,
+          "rmsse": 0.7765,
+          "bias": 0.006
+        },
+        "xgb_poisson": {
+          "wape_daily": 0.7468,
+          "wape_weekly": 0.3917,
+          "rmsse": 0.7759,
+          "bias": 0.005
+        },
+        "xgb_tweedie": {
+          "wape_daily": 0.7455,
+          "wape_weekly": 0.3931,
+          "rmsse": 0.7787,
+          "bias": -0.022
+        },
+        "ses_dow": {
+          "wape_daily": 0.7474,
+          "wape_weekly": 0.402,
+          "rmsse": 0.7903,
+          "bias": -0.0134
+        },
+        "tsb_dow": {
+          "wape_daily": 0.7514,
+          "wape_weekly": 0.4008,
+          "rmsse": 0.8036,
+          "bias": -0.0037
+        },
+        "ma28": {
+          "wape_daily": 0.7545,
+          "wape_weekly": 0.4054,
+          "rmsse": 0.7833,
+          "bias": -0.0068
+        },
+        "dow_mean_4w": {
+          "wape_daily": 0.7837,
+          "wape_weekly": 0.4054,
+          "rmsse": 0.8481,
+          "bias": -0.0068
+        },
+        "ens_gbm_ses": {
+          "wape_daily": 0.74,
+          "wape_weekly": 0.39,
+          "rmsse": 0.7749,
+          "bias": -0.0039
+        },
+        "ens_gbm_ses_75": {
+          "wape_daily": 0.7425,
+          "wape_weekly": 0.3896,
+          "rmsse": 0.774,
+          "bias": 0.0008
+        },
+        "ens_bag_ses_75": {
+          "wape_daily": 0.7416,
+          "wape_weekly": 0.3891,
+          "rmsse": 0.7731,
+          "bias": 0.0014
+        },
+        "ens_bag_tsb_75": {
+          "wape_daily": 0.7431,
+          "wape_weekly": 0.3897,
+          "rmsse": 0.7747,
+          "bias": 0.0039
+        },
+        "ens_bag_ses": {
+          "wape_daily": 0.7396,
+          "wape_weekly": 0.3897,
+          "rmsse": 0.7745,
+          "bias": -0.0035
+        },
+        "ens_bag_ses_tsb": {
+          "wape_daily": 0.7405,
+          "wape_weekly": 0.389,
+          "rmsse": 0.7757,
+          "bias": -0.0011
+        },
+        "ens_gbms": {
+          "wape_daily": 0.7474,
+          "wape_weekly": 0.3918,
+          "rmsse": 0.7757,
+          "bias": 0.0075
+        },
+        "ens_all": {
+          "wape_daily": 0.7421,
+          "wape_weekly": 0.389,
+          "rmsse": 0.7729,
+          "bias": 0.0033
+        },
+        "ens_lgb_ses_75": {
+          "wape_daily": 0.7414,
+          "wape_weekly": 0.3901,
+          "rmsse": 0.7736,
+          "bias": 0.0011
+        },
+        "ens_xgb_ses_75": {
+          "wape_daily": 0.7396,
+          "wape_weekly": 0.3897,
+          "rmsse": 0.7747,
+          "bias": -0.0198
+        },
+        "ens_bag_lgb_ses": {
+          "wape_daily": 0.7414,
+          "wape_weekly": 0.3894,
+          "rmsse": 0.7732,
+          "bias": 0.0013
+        },
+        "ens_boost3_ses": {
+          "wape_daily": 0.7404,
+          "wape_weekly": 0.389,
+          "rmsse": 0.7733,
+          "bias": -0.0058
+        }
+      }
+    },
+    "rohlik": {
+      "val": {
+        "gbm": {
+          "wape_daily": 0.2193,
+          "wape_weekly": 0.1746,
+          "rmsse": 0.8946,
+          "bias": 0.0862
+        },
+        "gbm_plus": {
+          "wape_daily": 0.2198,
+          "wape_weekly": 0.1737,
+          "rmsse": 0.8937,
+          "bias": 0.0833
+        },
+        "gbm_plus_l2": {
+          "wape_daily": 0.2302,
+          "wape_weekly": 0.184,
+          "rmsse": 0.9292,
+          "bias": 0.0998
+        },
+        "gbm_plus_big": {
+          "wape_daily": 0.2205,
+          "wape_weekly": 0.1746,
+          "rmsse": 0.8903,
+          "bias": 0.0753
+        },
+        "gbm_bag": {
+          "wape_daily": 0.2143,
+          "wape_weekly": 0.1684,
+          "rmsse": 0.8887,
+          "bias": 0.0794
+        },
+        "lgb_poisson": {
+          "wape_daily": 0.2249,
+          "wape_weekly": 0.1807,
+          "rmsse": 0.9038,
+          "bias": 0.0992
+        },
+        "lgb_tweedie": {
+          "wape_daily": 0.2184,
+          "wape_weekly": 0.173,
+          "rmsse": 0.8874,
+          "bias": 0.0846
+        },
+        "xgb_poisson": {
+          "wape_daily": 0.2111,
+          "wape_weekly": 0.1659,
+          "rmsse": 0.8853,
+          "bias": 0.0766
+        },
+        "xgb_tweedie": {
+          "wape_daily": 0.2022,
+          "wape_weekly": 0.1568,
+          "rmsse": 0.8761,
+          "bias": 0.057
+        },
+        "ses_dow": {
+          "wape_daily": 0.2504,
+          "wape_weekly": 0.2021,
+          "rmsse": 1.0488,
+          "bias": -0.0091
+        },
+        "tsb_dow": {
+          "wape_daily": 0.2419,
+          "wape_weekly": 0.1931,
+          "rmsse": 1.0079,
+          "bias": -0.0201
+        },
+        "ma28": {
+          "wape_daily": 0.2672,
+          "wape_weekly": 0.2009,
+          "rmsse": 1.0675,
+          "bias": -0.0146
+        },
+        "dow_mean_4w": {
+          "wape_daily": 0.2746,
+          "wape_weekly": 0.21,
+          "rmsse": 1.1881,
+          "bias": -0.0269
+        },
+        "ens_gbm_ses": {
+          "wape_daily": 0.2032,
+          "wape_weekly": 0.1562,
+          "rmsse": 0.9055,
+          "bias": 0.0371
+        },
+        "ens_gbm_ses_75": {
+          "wape_daily": 0.2052,
+          "wape_weekly": 0.1589,
+          "rmsse": 0.8832,
+          "bias": 0.0602
+        },
+        "ens_bag_ses_75": {
+          "wape_daily": 0.2018,
+          "wape_weekly": 0.1552,
+          "rmsse": 0.88,
+          "bias": 0.0573
+        },
+        "ens_bag_tsb_75": {
+          "wape_daily": 0.1989,
+          "wape_weekly": 0.1528,
+          "rmsse": 0.8719,
+          "bias": 0.0546
+        },
+        "ens_bag_ses": {
+          "wape_daily": 0.2033,
+          "wape_weekly": 0.1573,
+          "rmsse": 0.9042,
+          "bias": 0.0352
+        },
+        "ens_bag_ses_tsb": {
+          "wape_daily": 0.1991,
+          "wape_weekly": 0.1531,
+          "rmsse": 0.8926,
+          "bias": 0.0324
+        },
+        "ens_gbms": {
+          "wape_daily": 0.2212,
+          "wape_weekly": 0.1759,
+          "rmsse": 0.8962,
+          "bias": 0.0861
+        },
+        "ens_all": {
+          "wape_daily": 0.2063,
+          "wape_weekly": 0.1601,
+          "rmsse": 0.8817,
+          "bias": 0.065
+        },
+        "ens_lgb_ses_75": {
+          "wape_daily": 0.2072,
+          "wape_weekly": 0.1617,
+          "rmsse": 0.88,
+          "bias": 0.0612
+        },
+        "ens_xgb_ses_75": {
+          "wape_daily": 0.1957,
+          "wape_weekly": 0.1504,
+          "rmsse": 0.8709,
+          "bias": 0.0405
+        },
+        "ens_bag_lgb_ses": {
+          "wape_daily": 0.2036,
+          "wape_weekly": 0.1579,
+          "rmsse": 0.8773,
+          "bias": 0.0592
+        },
+        "ens_boost3_ses": {
+          "wape_daily": 0.1998,
+          "wape_weekly": 0.1543,
+          "rmsse": 0.8725,
+          "bias": 0.053
+        }
+      },
+      "test": {
+        "gbm": {
+          "wape_daily": 0.222,
+          "wape_weekly": 0.175,
+          "rmsse": 0.9232,
+          "bias": 0.0939
+        },
+        "gbm_plus": {
+          "wape_daily": 0.2188,
+          "wape_weekly": 0.1722,
+          "rmsse": 0.9255,
+          "bias": 0.091
+        },
+        "gbm_plus_l2": {
+          "wape_daily": 0.2213,
+          "wape_weekly": 0.1746,
+          "rmsse": 0.9291,
+          "bias": 0.0977
+        },
+        "gbm_plus_big": {
+          "wape_daily": 0.2175,
+          "wape_weekly": 0.1691,
+          "rmsse": 0.92,
+          "bias": 0.0831
+        },
+        "gbm_bag": {
+          "wape_daily": 0.2164,
+          "wape_weekly": 0.1693,
+          "rmsse": 0.9171,
+          "bias": 0.0884
+        },
+        "lgb_poisson": {
+          "wape_daily": 0.2141,
+          "wape_weekly": 0.1674,
+          "rmsse": 0.9182,
+          "bias": 0.0884
+        },
+        "lgb_tweedie": {
+          "wape_daily": 0.2103,
+          "wape_weekly": 0.163,
+          "rmsse": 0.9107,
+          "bias": 0.0813
+        },
+        "xgb_poisson": {
+          "wape_daily": 0.2172,
+          "wape_weekly": 0.1702,
+          "rmsse": 0.9262,
+          "bias": 0.0915
+        },
+        "xgb_tweedie": {
+          "wape_daily": 0.2101,
+          "wape_weekly": 0.1622,
+          "rmsse": 0.9142,
+          "bias": 0.0776
+        },
+        "ses_dow": {
+          "wape_daily": 0.2476,
+          "wape_weekly": 0.1972,
+          "rmsse": 1.0895,
+          "bias": -0.0038
+        },
+        "tsb_dow": {
+          "wape_daily": 0.2388,
+          "wape_weekly": 0.1863,
+          "rmsse": 1.0554,
+          "bias": -0.0052
+        },
+        "ma28": {
+          "wape_daily": 0.2682,
+          "wape_weekly": 0.1979,
+          "rmsse": 1.1083,
+          "bias": 0.0045
+        },
+        "dow_mean_4w": {
+          "wape_daily": 0.2666,
+          "wape_weekly": 0.2012,
+          "rmsse": 1.2093,
+          "bias": -0.0118
+        },
+        "ens_gbm_ses": {
+          "wape_daily": 0.2084,
+          "wape_weekly": 0.1587,
+          "rmsse": 0.9416,
+          "bias": 0.0436
+        },
+        "ens_gbm_ses_75": {
+          "wape_daily": 0.2091,
+          "wape_weekly": 0.1614,
+          "rmsse": 0.9166,
+          "bias": 0.0673
+        },
+        "ens_bag_ses_75": {
+          "wape_daily": 0.2076,
+          "wape_weekly": 0.1597,
+          "rmsse": 0.9131,
+          "bias": 0.0654
+        },
+        "ens_bag_tsb_75": {
+          "wape_daily": 0.2059,
+          "wape_weekly": 0.1587,
+          "rmsse": 0.9043,
+          "bias": 0.065
+        },
+        "ens_bag_ses": {
+          "wape_daily": 0.2071,
+          "wape_weekly": 0.1577,
+          "rmsse": 0.9406,
+          "bias": 0.0423
+        },
+        "ens_bag_ses_tsb": {
+          "wape_daily": 0.2045,
+          "wape_weekly": 0.1555,
+          "rmsse": 0.929,
+          "bias": 0.042
+        },
+        "ens_gbms": {
+          "wape_daily": 0.2178,
+          "wape_weekly": 0.1708,
+          "rmsse": 0.9175,
+          "bias": 0.0906
+        },
+        "ens_all": {
+          "wape_daily": 0.2089,
+          "wape_weekly": 0.1611,
+          "rmsse": 0.9086,
+          "bias": 0.0708
+        },
+        "ens_lgb_ses_75": {
+          "wape_daily": 0.2029,
+          "wape_weekly": 0.155,
+          "rmsse": 0.909,
+          "bias": 0.06
+        },
+        "ens_xgb_ses_75": {
+          "wape_daily": 0.2034,
+          "wape_weekly": 0.1554,
+          "rmsse": 0.9123,
+          "bias": 0.0572
+        },
+        "ens_bag_lgb_ses": {
+          "wape_daily": 0.205,
+          "wape_weekly": 0.1571,
+          "rmsse": 0.9094,
+          "bias": 0.0627
+        },
+        "ens_boost3_ses": {
+          "wape_daily": 0.2036,
+          "wape_weekly": 0.1558,
+          "rmsse": 0.907,
+          "bias": 0.0609
+        }
+      }
+    }
+  },
+  "selection": {
+    "metric": "mean over datasets of weekly WAPE / ma28 weekly WAPE (lower is better)",
+    "ranking_on_validation": [
+      {
+        "model": "ens_xgb_ses_75",
+        "val": 0.7808,
+        "test": 0.8352
+      },
+      {
+        "model": "ens_boost3_ses",
+        "val": 0.7863,
+        "test": 0.8386
+      },
+      {
+        "model": "ens_bag_ses_75",
+        "val": 0.7922,
+        "test": 0.8459
+      },
+      {
+        "model": "ens_bag_lgb_ses",
+        "val": 0.7947,
+        "test": 0.8441
+      },
+      {
+        "model": "ens_bag_tsb_75",
+        "val": 0.7975,
+        "test": 0.8453
+      },
+      {
+        "model": "ens_bag_ses_tsb",
+        "val": 0.7977,
+        "test": 0.8426
+      },
+      {
+        "model": "ens_gbm_ses_75",
+        "val": 0.799,
+        "test": 0.8504
+      },
+      {
+        "model": "ens_gbm_ses",
+        "val": 0.8003,
+        "test": 0.8518
+      },
+      {
+        "model": "ens_lgb_ses_75",
+        "val": 0.8006,
+        "test": 0.8445
+      },
+      {
+        "model": "ens_bag_ses",
+        "val": 0.8014,
+        "test": 0.8493
+      },
+      {
+        "model": "ens_all",
+        "val": 0.8019,
+        "test": 0.8485
+      },
+      {
+        "model": "xgb_tweedie",
+        "val": 0.8225,
+        "test": 0.8534
+      },
+      {
+        "model": "xgb_poisson",
+        "val": 0.833,
+        "test": 0.8708
+      },
+      {
+        "model": "lgb_tweedie",
+        "val": 0.8375,
+        "test": 0.8663
+      },
+      {
+        "model": "gbm_bag",
+        "val": 0.8403,
+        "test": 0.8695
+      },
+      {
+        "model": "lgb_poisson",
+        "val": 0.8486,
+        "test": 0.8708
+      },
+      {
+        "model": "gbm_plus",
+        "val": 0.8508,
+        "test": 0.877
+      },
+      {
+        "model": "gbm",
+        "val": 0.8509,
+        "test": 0.8799
+      },
+      {
+        "model": "ens_gbms",
+        "val": 0.8523,
+        "test": 0.874
+      },
+      {
+        "model": "gbm_plus_big",
+        "val": 0.8561,
+        "test": 0.876
+      },
+      {
+        "model": "gbm_plus_l2",
+        "val": 0.8671,
+        "test": 0.8837
+      },
+      {
+        "model": "tsb_dow",
+        "val": 0.9388,
+        "test": 0.9348
+      },
+      {
+        "model": "ses_dow",
+        "val": 0.9559,
+        "test": 0.9667
+      },
+      {
+        "model": "dow_mean_4w",
+        "val": 0.9757,
+        "test": 0.9774
+      },
+      {
+        "model": "ma28",
+        "val": 1.0,
+        "test": 1.0
+      }
+    ],
+    "winner": "ens_xgb_ses_75"
+  },
+  "winner_losses": [
+    {
+      "dataset": "favorita",
+      "split": "val",
+      "metric": "wape_daily",
+      "winner": 0.1209,
+      "beaten_by": [
+        {
+          "model": "ens_boost3_ses",
+          "value": 0.1201
+        },
+        {
+          "model": "ens_bag_lgb_ses",
+          "value": 0.1208
+        }
+      ],
+      "n_better": 2
+    },
+    {
+      "dataset": "favorita",
+      "split": "val",
+      "metric": "rmsse",
+      "winner": 0.608,
+      "beaten_by": [
+        {
+          "model": "ens_boost3_ses",
+          "value": 0.6051
+        },
+        {
+          "model": "ens_bag_lgb_ses",
+          "value": 0.6064
+        },
+        {
+          "model": "ens_bag_ses_75",
+          "value": 0.6069
+        },
+        {
+          "model": "ens_lgb_ses_75",
+          "value": 0.6072
+        },
+        {
+          "model": "ens_all",
+          "value": 0.6075
+        }
+      ],
+      "n_better": 5
+    },
+    {
+      "dataset": "favorita",
+      "split": "test",
+      "metric": "rmsse",
+      "winner": 0.6949,
+      "beaten_by": [
+        {
+          "model": "ens_boost3_ses",
+          "value": 0.6924
+        },
+        {
+          "model": "ens_all",
+          "value": 0.6935
+        },
+        {
+          "model": "ens_bag_ses_tsb",
+          "value": 0.6937
+        },
+        {
+          "model": "ens_bag_lgb_ses",
+          "value": 0.6937
+        },
+        {
+          "model": "ens_bag_ses_75",
+          "value": 0.6943
+        }
+      ],
+      "n_better": 8
+    },
+    {
+      "dataset": "m5",
+      "split": "val",
+      "metric": "wape_weekly",
+      "winner": 0.3533,
+      "beaten_by": [
+        {
+          "model": "ens_boost3_ses",
+          "value": 0.3522
+        },
+        {
+          "model": "ens_lgb_ses_75",
+          "value": 0.3525
+        },
+        {
+          "model": "ens_bag_lgb_ses",
+          "value": 0.3526
+        },
+        {
+          "model": "ens_all",
+          "value": 0.353
+        },
+        {
+          "model": "ens_bag_ses_75",
+          "value": 0.3532
+        }
+      ],
+      "n_better": 6
+    },
+    {
+      "dataset": "m5",
+      "split": "val",
+      "metric": "rmsse",
+      "winner": 0.7529,
+      "beaten_by": [
+        {
+          "model": "ens_boost3_ses",
+          "value": 0.7519
+        },
+        {
+          "model": "ens_bag_lgb_ses",
+          "value": 0.7521
+        },
+        {
+          "model": "ens_all",
+          "value": 0.7523
+        },
+        {
+          "model": "ens_bag_ses_75",
+          "value": 0.7524
+        },
+        {
+          "model": "ens_lgb_ses_75",
+          "value": 0.7524
+        }
+      ],
+      "n_better": 5
+    },
+    {
+      "dataset": "m5",
+      "split": "test",
+      "metric": "wape_weekly",
+      "winner": 0.3897,
+      "beaten_by": [
+        {
+          "model": "ens_bag_ses_tsb",
+          "value": 0.389
+        },
+        {
+          "model": "ens_all",
+          "value": 0.389
+        },
+        {
+          "model": "ens_boost3_ses",
+          "value": 0.389
+        },
+        {
+          "model": "ens_bag_ses_75",
+          "value": 0.3891
+        },
+        {
+          "model": "ens_bag_lgb_ses",
+          "value": 0.3894
+        }
+      ],
+      "n_better": 6
+    },
+    {
+      "dataset": "m5",
+      "split": "test",
+      "metric": "rmsse",
+      "winner": 0.7747,
+      "beaten_by": [
+        {
+          "model": "ens_all",
+          "value": 0.7729
+        },
+        {
+          "model": "ens_bag_ses_75",
+          "value": 0.7731
+        },
+        {
+          "model": "ens_bag_lgb_ses",
+          "value": 0.7732
+        },
+        {
+          "model": "ens_boost3_ses",
+          "value": 0.7733
+        },
+        {
+          "model": "ens_lgb_ses_75",
+          "value": 0.7736
+        }
+      ],
+      "n_better": 7
+    },
+    {
+      "dataset": "rohlik",
+      "split": "test",
+      "metric": "wape_weekly",
+      "winner": 0.1554,
+      "beaten_by": [
+        {
+          "model": "ens_lgb_ses_75",
+          "value": 0.155
+        }
+      ],
+      "n_better": 1
+    },
+    {
+      "dataset": "rohlik",
+      "split": "test",
+      "metric": "wape_daily",
+      "winner": 0.2034,
+      "beaten_by": [
+        {
+          "model": "ens_lgb_ses_75",
+          "value": 0.2029
+        }
+      ],
+      "n_better": 1
+    },
+    {
+      "dataset": "rohlik",
+      "split": "test",
+      "metric": "rmsse",
+      "winner": 0.9123,
+      "beaten_by": [
+        {
+          "model": "ens_bag_tsb_75",
+          "value": 0.9043
+        },
+        {
+          "model": "ens_boost3_ses",
+          "value": 0.907
+        },
+        {
+          "model": "ens_all",
+          "value": 0.9086
+        },
+        {
+          "model": "ens_lgb_ses_75",
+          "value": 0.909
+        },
+        {
+          "model": "ens_bag_lgb_ses",
+          "value": 0.9094
+        }
+      ],
+      "n_better": 6
+    }
+  ]
+}

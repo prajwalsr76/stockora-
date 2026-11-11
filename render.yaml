@@ -1,0 +1,23 @@
+# Render Blueprint: the Stockora API as a free web service (Docker).
+# Render: New > Blueprint > pick this repo. The website itself is on Cloudflare Pages (see DEPLOY.md).
+services:
+  - type: web
+    name: stockora-api
+    runtime: docker
+    plan: free
+    region: singapore           # nearest Render region to India
+    dockerfilePath: ./backend/Dockerfile   # paths are from the repository root
+    dockerContext: ./backend
+    buildFilter:
+      paths:
+        - backend/**                       # website-only changes don't rebuild the API
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: CORS_ORIGINS
+        value: https://stockora.pages.dev
+      - key: CORS_ORIGIN_REGEX
+        value: https://[a-z0-9-]+\.stockora\.pages\.dev
+      # Optional AI: add GROQ_API_KEY in the Render dashboard (Environment), never in this file.
+      - key: GROQ_API_KEY
+        sync: false
