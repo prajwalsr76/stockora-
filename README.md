@@ -4,7 +4,7 @@
 
 India has over a crore of small retail stores, and most still run on the owner's memory: fast sellers run out on the busiest day, while milk, bread and paneer expire on the shelf. Billing apps record what was sold. Stockora predicts what happens next, explains why, and leaves every decision to the owner.
 
-> **Status (11 Nov 2026): not yet validated on Indian shop data.** Every measured result below comes from non-Indian public datasets (Favorita, Ecuador; Walmart M5, USA) or from clearly labelled synthetic data. The demo store's sales history is synthetic. No real shop has used Stockora yet. A pilot kit is ready ([PILOT.md](PILOT.md)) for when shop data can be collected.
+> **Status (11 Nov 2026): not yet validated on Indian shop data.** Every measured result below comes from non-Indian public datasets (Favorita, Ecuador; Walmart M5, USA,and rohilik) or from clearly labelled synthetic data. The demo store's sales history is synthetic. No real shop has used Stockora yet. A pilot kit is ready ([PILOT.md](PILOT.md)) for when shop data can be collected.
 
 ---
 
@@ -32,7 +32,7 @@ India has over a crore of small retail stores, and most still run on the owner's
 
 ## Results
 
-### Which forecaster: a model competition on three real datasets
+## Which forecaster: a model competition on three real datasets
 
 25 candidates (classical per-product methods; boosted trees from scikit-learn, LightGBM and XGBoost with Poisson and Tweedie losses; ensembles) were tested on three very different public datasets: Favorita (54 Ecuadorian supermarkets, store x product family), Walmart M5 (single items, 3 US stores) and Rohlik (online grocer in Czechia and Hungary, 2,554 fresh-food items in 3 warehouses). The winner had to be one configuration for all three. It was picked on validation windows and confirmed on later test windows that were never used for choosing. LightGBM and XGBoost settings were fixed before the first run. Full report, including every place the winner loses: [`backend/evals/COMPETITION_REPORT.md`](backend/evals/COMPETITION_REPORT.md).
 
